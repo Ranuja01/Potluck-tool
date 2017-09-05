@@ -1,0 +1,35 @@
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 150px;
+                background-color: #9460CD;
+                border: 2px solid #555;
+               }   
+          
+			
+			li a {
+                display: block;
+                color: #000000;
+                padding: 10px 5px;
+                text-decoration: Calibri;
+            }
+   
+            li a:hover:not(.active) {
+                background-color: #FFFFFF;
+                color: blue;
+            }
+		
+			 body {
+           font-family: Arial,sans-serif;
+           }
+			ul.a {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 145px;
+                background-color: #4EBD3A;
+                border: 0px solid #FFFFFF;
+				padding: 5px 5px;
+				color: #FFFFFF;
+			 }

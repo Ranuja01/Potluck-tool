@@ -1,0 +1,26 @@
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 120px;
+                background-color: #4897D8;
+                border: 2px solid #004445;
+               }   
+            body {
+           font-family: Arial,sans-serif;
+           }
+			
+			
+			li a {
+                display: block;
+                color: #021C1E;
+                padding: 5px 10px;
+                text-decoration:;
+            }
+   
+            li a:hover:not(.active) {
+                background-color: #6FB98F;
+                color: blue;
+            }
+		
+		

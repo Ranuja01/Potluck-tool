@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<link rel="stylesheet" href="SearchStyles.css">
+</head>
+<script>
+
+function showNewEmbed(embededURL){
+  var newEmbed=document.getElementById("txt");
+  var textIntxt = newEmbed.value;
+
+  var source= "https://docs.google.com/spreadsheets/d/18JfrIDdq2-plMPL9Ffq2vnO4n9o5nGPPkDak9p6ePYw/gviz/tq?tqx=out:html&tq=SELECT+B,+C,+D,+E,+F+WHERE+B+CONTAINS+%27" + textIntxt + "%27&gid=427903390";
+   // alert(source);
+	//embededURL.getAttribute("href");
+  var newEmbed=document.getElementById("embedHolder");
+  var clone=newEmbed.cloneNode(true);
+  clone.setAttribute('src',source);
+  newEmbed.parentNode.replaceChild(clone,newEmbed)
+}
+
+</script> 
+
+<div>
+<table>
+<tr>
+	<td>Search Call List</td>
+	<td> : </td>
+	<td><input id="txt" type="text" ></input></td>
+</tr> 
+<tr>
+	<td><ul><li><a href="" onclick="showNewEmbed(this);return false;">Get Data</a></li></ul></input></td>
+</tr> 
+</table>
+
+</div>	
+<embed id="embedHolder" quality="high" menu ="false" width="1000" height="800" />	
+</div>	
+</body>
+</html>
+
+ 
